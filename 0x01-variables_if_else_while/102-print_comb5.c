@@ -1,10 +1,8 @@
 #include <stdio.h>
 
 /**
- * zero_pad - print single-digit and double-digit numbers
- * as two digit numbers
- *
- * Input: 0 - 99 (int)
+ * zero_pad - print single-digit and double-digit numbers as two digit numbers
+ * @n: integer between 0 and 99
  *
  * Return: 1 if successful, 0 if error
  */
