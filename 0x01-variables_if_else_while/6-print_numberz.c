@@ -9,11 +9,10 @@ int main(void)
 {
 	int i = 0;
 
-	char digits[12] = "0123456789\n";
-
 	/* Print single digit numbers of base 10 */
-	while (i <= 10)
-		putchar(digits[i++]);
+	while (i < 10)
+		putchar('0' + i++);
+	putchar('\n');
 
 	return (0);
 }
