@@ -7,12 +7,13 @@
  */
 int main(void)
 {
-	char ch = '0';
+	int i = 0;
+
+	char digits[12] = "0123456789\n";
 
 	/* Print single digit numbers of base 10 */
-	while (ch <= '9')
-		putchar(ch++);
-	putchar('\n');
+	while (i <= 10)
+		putchar(digits[i++]);
 
 	return (0);
 }
