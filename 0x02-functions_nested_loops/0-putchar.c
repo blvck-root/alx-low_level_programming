@@ -19,5 +19,3 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
-
-#include "_putchar.c"
