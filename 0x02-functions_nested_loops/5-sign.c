@@ -1,22 +1,4 @@
-#include <stdio.h>
 #include "main.h"
-
-/**
- * main - entry point
- *
- * Return: Always 0
- */
-int main(void)
-{
-	int r;
-
-	r = print_sign(-1);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(r + '0');
-	_putchar('\n');
-	return (0);
-}
 
 /**
  * print_sign - prints the sign of a number

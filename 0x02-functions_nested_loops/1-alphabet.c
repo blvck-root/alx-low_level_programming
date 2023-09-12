@@ -1,18 +1,4 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
-
-/**
- * main - entry point
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 
 /**
  * print_alphabet - prints the letters a-z
@@ -27,5 +13,3 @@ void print_alphabet(void)
 		_putchar('a' + i);
 	_putchar('\n');
 }
-
-#include "_putchar.c"
