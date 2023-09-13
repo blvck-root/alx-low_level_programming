@@ -10,19 +10,17 @@ int main(void)
 	unsigned long tmp;
 	unsigned long curr = 1;
 	unsigned long next = 2;
+	unsigned long sum = 0;
 
 	while (curr < 4000000)
 	{
 		if (curr % 2 == 0)
-		{
-			if (curr > 2)
-				printf(", ");
-			printf("%lu", curr);
-		}
+			sum += curr;
+
 		tmp = next;
 		next += curr;
 		curr = tmp;
 	}
-	printf("\n");
+	printf("%lu\n", sum);
 	return (0);
 }
