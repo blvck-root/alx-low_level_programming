@@ -14,10 +14,13 @@ int main(void)
 
 	for (i = 0; i < 50; i++)
 	{
-		printf("%lu\n", curr);
+		if (i > 0)
+			printf(", ");
+		printf("%lu", curr);
 		tmp = next;
 		next += curr;
 		curr = tmp;
 	}
+	printf("\n");
 	return (0);
 }
