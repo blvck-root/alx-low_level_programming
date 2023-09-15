@@ -5,9 +5,9 @@
  * @n: integer
  * Return: 0 if n is prime 0 otherwise
  */
-int _isprime(int n)
+long _isprime(long n)
 {
-	int f = 2;
+	long f = 2;
 
 	if (n < 2)
 		return (1);
@@ -31,9 +31,9 @@ int _isprime(int n)
  */
 int main(void)
 {
-	int f = 2;
-	int lpf = 2;
-	int n = 1231952;
+	long f = 2;
+	long lpf = 2;
+	long n = 1231952;
 
 	while (f < n)
 	{
@@ -41,6 +41,6 @@ int main(void)
 			lpf = f;
 		f++;
 	}
-	printf("%d\n", lpf);
+	printf("%ld\n", lpf);
 	return (0);
 }
