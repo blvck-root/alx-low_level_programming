@@ -6,3 +6,5 @@
 ## Task 1
 - Swap the values of two integers.
 
+## Task 2
+- Compute the length of a string.
