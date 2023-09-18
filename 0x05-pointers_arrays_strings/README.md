@@ -8,3 +8,6 @@
 
 ## Task 2
 - Compute the length of a string.
+
+## Task 3
+- Print a string using `_putchar` function.
