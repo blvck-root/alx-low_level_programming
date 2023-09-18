@@ -17,3 +17,6 @@
 
 ## Task 5
 - Reverse a string.
+
+## Task 6
+- Print every other character in a string.
