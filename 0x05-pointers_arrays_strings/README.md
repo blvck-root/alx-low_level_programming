@@ -14,3 +14,6 @@
 
 ## Task 4
 - Print a string in reverse.
+
+## Task 5
+- Reverse a string.
