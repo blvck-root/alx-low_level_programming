@@ -23,3 +23,6 @@
 
 ## Task 7
 - Print the second half of the string.
+
+## Task 8
+- Print first n elements of an array.
