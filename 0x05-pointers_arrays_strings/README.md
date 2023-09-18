@@ -20,3 +20,6 @@
 
 ## Task 6
 - Print every other character in a string.
+
+## Task 7
+- Print the second half of the string.
