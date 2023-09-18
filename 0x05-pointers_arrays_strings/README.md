@@ -26,3 +26,6 @@
 
 ## Task 8
 - Print first n elements of an array.
+
+## Task 9
+- Copy string.
