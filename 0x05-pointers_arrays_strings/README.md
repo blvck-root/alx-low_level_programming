@@ -11,3 +11,6 @@
 
 ## Task 3
 - Print a string using `_putchar` function.
+
+## Task 4
+- Print a string in reverse.
