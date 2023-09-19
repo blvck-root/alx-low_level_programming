@@ -29,3 +29,9 @@
 
 ## Task 9
 - Copy string.
+
+## Task 10
+- Convert string to integer.
+
+## Task 11
+- Generate random valid passwords for the program 101-crackme.
