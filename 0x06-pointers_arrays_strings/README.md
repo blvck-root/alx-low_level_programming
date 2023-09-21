@@ -15,3 +15,12 @@
 
 ## Task 4
 - Reverse elements in an array.
+
+## Task 5
+- Convert all lowercase letters in a string to uppercase.
+
+## Task 6
+- Capitalize all words in a string.
+
+## Task 7
+- Encode a string into the 1337 system.
