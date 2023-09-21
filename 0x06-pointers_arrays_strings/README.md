@@ -12,3 +12,6 @@
 
 ## Task 3
 - Compare two strings.
+
+## Task 4
+- Reverse elements in an array.
