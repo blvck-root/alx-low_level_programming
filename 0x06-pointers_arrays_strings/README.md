@@ -9,3 +9,6 @@
 
 ## Task 2
 - Copy a string onto another string.
+
+## Task 3
+- Compare two strings.
