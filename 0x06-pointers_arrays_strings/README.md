@@ -3,3 +3,6 @@
 
 ## Task 0
 - Concatenate two strings.
+
+## Task 1
+- Concatenate two strings using at most n bytes from the second string.
