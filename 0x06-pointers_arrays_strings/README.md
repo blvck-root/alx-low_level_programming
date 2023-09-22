@@ -24,3 +24,6 @@
 
 ## Task 7
 - Encode a string into the 1337 system.
+
+## Task 8
+- Encode a string using ROT13.
