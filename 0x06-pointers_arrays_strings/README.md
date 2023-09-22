@@ -30,3 +30,6 @@
 
 ## Task 9
 - Print an integer.
+
+## Task 10
+- Update the value of an array element.
