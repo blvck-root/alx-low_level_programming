@@ -27,3 +27,6 @@
 
 ## Task 8
 - Encode a string using ROT13.
+
+## Task 9
+- Print an integer.
