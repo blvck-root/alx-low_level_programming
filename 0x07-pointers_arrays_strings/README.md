@@ -6,3 +6,6 @@
 
 ## Task 1
 - Copy n bytes from src to dest.
+
+## Task 2
+- Locate a character in a string.
