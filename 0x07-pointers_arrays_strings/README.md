@@ -3,3 +3,6 @@
 
 ## Task 0
 - Fill memory with a constant byte.
+
+## Task 1
+- Copy n bytes from src to dest.
