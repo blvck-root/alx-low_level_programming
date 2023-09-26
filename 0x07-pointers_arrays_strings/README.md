@@ -9,3 +9,7 @@
 
 ## Task 2
 - Locate a character in a string.
+
+## Task 3
+- Get the length of a prefix substring.
+
