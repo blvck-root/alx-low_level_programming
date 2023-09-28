@@ -8,10 +8,7 @@
  */
 int is_prime(int n, int d)
 {
-	if (n < 0)
-		n *= -1;
-
-	if (n % d == 0 || d > n)
+	if (n % d == 0 || n < 2) 
 		return (0);
 	else if (d * d > n)
 		return (1);
