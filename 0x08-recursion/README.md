@@ -21,3 +21,9 @@
 
 ## Task 6
 - Check if an integer is a prime number.
+
+## Task 7
+- Check if string is a palindrome.
+
+## Task 8
+- Check if two strings are identical.
