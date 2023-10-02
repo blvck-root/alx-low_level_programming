@@ -12,6 +12,8 @@ int numcoins(int cents, int *denoms)
 {
 	int denom = *denoms;
 
+	printf("%d\n", cents);
+
 	if (cents == denom)
 		return (1);
 	else if (cents  > denom)
@@ -39,6 +41,9 @@ int main(int argc, char **argv)
 
 	cents = atoi(argv[1]);
 
-	printf("%d\n", numcoins(cents, coins));
+	if (cents < 0)
+		printf("0\n");
+	else
+		printf("%d\n", numcoins(cents, coins));
 	return (0);
 }
