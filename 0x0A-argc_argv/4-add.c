@@ -5,7 +5,7 @@
 /**
  * _atoi - convert string to integer
  * @n: string representation of an integer
- * Return: integer conversion of a string, -1 if n contains non-integer symbols 
+ * Return: integer, -1 if n contains non-integer symbols
  */
 int _atoi(char *n)
 {
@@ -29,7 +29,7 @@ int _atoi(char *n)
  * @argv: array containing command line arguments
  * Return: O (success)
  */
-int main(int __attribute__((unused)) argc, char __attribute__((unused)) **argv)
+int main(int argc, char **argv)
 {
 	int sum = 0;
 	int n;

@@ -11,7 +11,7 @@
 int numcoins(int cents, int *denoms)
 {
 	int denom = *denoms;
-	
+
 	if (cents == denom)
 		return (1);
 	else if (cents  > denom)
