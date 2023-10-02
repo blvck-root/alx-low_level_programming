@@ -12,11 +12,9 @@ int numcoins(int cents, int *denoms)
 {
 	int denom = *denoms;
 
-	printf("%d\n", cents);
-
-	if (cents == denom)
-		return (1);
-	else if (cents  > denom)
+	if (cents == 0)
+		return (0);
+	else if (cents  >= denom)
 		return (numcoins(cents - denom, denoms) + 1);
 	else
 		return (numcoins(cents, ++denoms));
