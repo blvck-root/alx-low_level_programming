@@ -21,8 +21,8 @@ char **strtow(char *str)
 		if (str[i - 1] != ' ' && (str[i] == ' ' || str[i] == '\0'))
 			numwords++;
 	}
-	words = (char **) malloc(++numwords * sizeof(*words));
-	if (words == NULL)
+	words = (char **) malloc((numwords + 1) * sizeof(*words));
+	if (words == NULL || numwords == 0)
 	{
 		free(words);
 		return (NULL);
