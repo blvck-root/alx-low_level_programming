@@ -2,7 +2,12 @@
 #define HEADERFILE_H
 
 /**
- * dog - definition of dog struct
+ * struct dog - definition of dog struct
+ * @name: dog's name
+ * @age: number of years the dog has lived
+ * @owner: dog owner's name
+ *
+ * Description: This is a  struct definition for a dog object with 3 members.
  */
 typedef struct dog
 {
