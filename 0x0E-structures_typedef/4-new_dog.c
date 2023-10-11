@@ -3,25 +3,17 @@
 #include <stdlib.h>
 
 /**
- * _strcpy - copies string including '\0'
- * @src: string
- * Return: pointer to dest
+ * _strlen - computes the length of a string
+ * @str: string
+ * Return: number of characters in a string
  */
-char *_strcpy(char *src)
+int _strlen(char *str)
 {
-	int i, len = 0;
-	char *dest;
+	int len = 0;
 
-	while (src[len] != '\0')
-		++len;
-
-	dest = malloc(len * sizeof(char));
-	if (dest == NULL)
-		return (NULL);
-
-	for (i = 0; i < len; i++)
-		dest[i] = src[i];
-	return (dest);
+	while (str[len++] != '\0')
+		;
+	return (len);
 }
 
 /**
@@ -34,14 +26,27 @@ char *_strcpy(char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
-	/* char *n = name, *o = owner; * dog name and owner */
+	int i, namelen, ownerlen;
+
+	namelen = _strlen(name);
+	ownerlen = _strlen(owner);
 
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 		return (NULL);
 
-	d->name = _strcpy(name);
+	d->name = malloc(namelen * sizeof(d->name));
+	if (d == NULL)
+		return (NULL);
+	for (i = 0; i < namelen; i++)
+		d->name[i] = name[i];
+
 	d->age = age;
-	d->owner = _strcpy(owner);
+
+	d->owner = malloc(ownerlen * sizeof(d->owner));
+	if (d == NULL)
+		return (NULL);
+	for (i = 0; i < ownerlen; i++)
+		d->owner[i] = owner[i];
 	return (d);
 }
