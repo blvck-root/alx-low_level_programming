@@ -1,8 +1,10 @@
 #ifndef CALC_H
 #define CALC_H
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * struct op - structure of type Operation
+ * struct op - structure of type op
  * @op: operation symbol
  * @f: pointer to function
  *

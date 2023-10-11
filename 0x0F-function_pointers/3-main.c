@@ -1,6 +1,4 @@
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - performs simple arithmetic operations
@@ -10,8 +8,7 @@
  */
 int main(int argc, char **argv)
 {
-	int (*op)(int, int);
-	int num1, num2;
+	int (*op)(int, int), num1, num2;
 
 	if (argc != 4)
 	{
