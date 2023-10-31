@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
-#include <string.h>
 #include <stdlib.h>
 #include <errno.h>
 
@@ -47,7 +46,7 @@ int main(int argc, char **argv)
 
 	if (fd_to == -1)
 	{
-		err = "Error: can't write to";
+		err = "Error: Can't write to";
 		dprintf(STDERR_FILENO, "%s %s\n", err, file_to);
 		exit(99);
 	}
