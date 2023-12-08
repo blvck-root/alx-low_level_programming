@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -18,20 +19,23 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (add_dnodeint(h, n));
 
 	node = *h;
-	while (node)
+	while (node->next)
 	{
-		if (idx == 0)
+		if (idx == 1)
 		{
-			tmp = node->prev;
-			node->prev = NULL;
-			tmp->next = NULL;
+			tmp = node->next;
+			tmp->prev = NULL;
+			node->next = NULL;
 			new = add_dnodeint_end(&node, n);
-			new->next = node;
-			node->prev = new;
+			new->next = tmp;
+			tmp->prev = new;
 			return (new);
 		}
 		node = node->next;
 		--idx;
 	}
+	printf("idx-%u\n", idx);
+	if (idx == 1)
+		return (add_dnodeint_end(&node, n));
 	return (NULL);
 }
