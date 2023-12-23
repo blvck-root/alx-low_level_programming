@@ -252,10 +252,12 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 void shash_table_print(const shash_table_t *ht)
 {
 	unsigned long int count = 0;
-	shash_node_t *node = ht->shead;
+	shash_node_t *node;
 
 	if (ht == NULL)
 		exit(EXIT_SUCCESS);
+
+	node = ht->shead;
 	printf("{");
 	while (node != NULL)
 	{
@@ -275,10 +277,12 @@ void shash_table_print(const shash_table_t *ht)
 void shash_table_print_rev(const shash_table_t *ht)
 {
 	unsigned long int count = 0;
-	shash_node_t *node = ht->stail;
+	shash_node_t *node;
 
 	if (ht == NULL)
 		exit(EXIT_SUCCESS);
+
+	node = ht->stail;
 	printf("{");
 	while (node != NULL)
 	{
