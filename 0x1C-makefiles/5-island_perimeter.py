@@ -10,15 +10,16 @@ def island_perimeter(grid):
     row_len = len(grid)
     perimeter = 0
 
-    for i in range(row_len):
-        for j in range(col_len):
+    for i in range(1, row_len - 1):
+        for j in range(1, col_len - 1):
             if grid[i][j] == 1:
-                up = grid[i - 1][j] if i >= 0 else 0
-                down = grid[i + 1][j] if i < row_len else 0
-                left = grid[i][j - 1] if j >= 0 else 0
-                right = grid[i][j + 1] if j < col_len else 0
+                up = grid[i - 1][j]
+                down = grid[i + 1][j]
+                left = grid[i][j - 1]
+                right = grid[i][j + 1]
 
                 # add number of 0 value neighbor cells to perimeter
-                perimeter += 4 - (up + down + left + right)
+                cell = 4 - (up + down + left + right)
+                perimeter += cell
 
     return perimeter
