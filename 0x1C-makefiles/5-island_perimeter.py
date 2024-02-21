@@ -3,6 +3,7 @@
 Module contains a function to calculate the perimeter of an island
 """
 
+
 def island_perimeter(grid):
     """Calculate perimeter of an island"""
     col_len = len(grid[0])
@@ -17,6 +18,7 @@ def island_perimeter(grid):
                 left = grid[i][j - 1] if j >= 0 else 0
                 right = grid[i][j + 1] if j < col_len else 0
 
-                perimeter += 4 - (up + down + left + right)  # add number of 0 cells
+                # add number of 0 value neighbor cells to perimeter
+                perimeter += 4 - (up + down + left + right)
 
     return perimeter
