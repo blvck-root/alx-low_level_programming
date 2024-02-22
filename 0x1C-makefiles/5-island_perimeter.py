@@ -20,6 +20,9 @@ def island_perimeter(grid):
 
                 # add number of 0 value neighbor cells to perimeter
                 cell = 4 - (up + down + left + right)
-                perimeter += cell
+                if cell == 4:
+                    return 4 if perimeter == 0 else 0
+                else:
+                    perimeter += cell
 
     return perimeter
