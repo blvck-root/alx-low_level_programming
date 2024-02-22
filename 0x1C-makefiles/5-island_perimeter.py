@@ -6,23 +6,25 @@ Module contains a function to calculate the perimeter of an island
 
 def island_perimeter(grid):
     """Calculate perimeter of an island"""
-    col_len = len(grid[0])
+    visited = set()
     row_len = len(grid)
-    perimeter = 0
+    col_len = len(grid[0])
 
-    for i in range(1, row_len - 1):
-        for j in range(1, col_len - 1):
+    def depth_first(i, j):
+        if grid[i][j] == 0 or i < 0 or j < 0 or \
+           i >= row_len or j >= col_len:
+            return 1
+        if (i, j) in visited:
+            return 0
+
+        visited.add((i, j))
+        perimeter = depth_first(i, j - 1)
+        perimeter += depth_first(i, j + 1)
+        perimeter += depth_first(i - 1, j)
+        perimeter += depth_first(i + 1, j)
+        return perimeter
+
+    for i in range(row_len):
+        for j in range(col_len):
             if grid[i][j] == 1:
-                up = grid[i - 1][j]
-                down = grid[i + 1][j]
-                left = grid[i][j - 1]
-                right = grid[i][j + 1]
-
-                # add number of 0 value neighbor cells to perimeter
-                cell = 4 - (up + down + left + right)
-                if cell == 4:
-                    return 4 if perimeter == 0 else 0
-                else:
-                    perimeter += cell
-
-    return perimeter
+                return depth_first(i, j)
