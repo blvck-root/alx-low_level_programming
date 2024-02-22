@@ -10,7 +10,11 @@ def island_perimeter(grid):
     row_len = len(grid)
     col_len = len(grid[0])
 
+    if row_len > 100 or col_len > 100:
+        return 0
+
     def depth_first(i, j):
+        """Depth-first search algorithm to calculate perimeter"""
         if grid[i][j] == 0 or i < 0 or j < 0 or \
            i >= row_len or j >= col_len:
             return 1
