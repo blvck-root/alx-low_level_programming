@@ -28,3 +28,4 @@ def island_perimeter(grid):
         for j in range(col_len):
             if grid[i][j] == 1:
                 return depth_first(i, j)
+    return 0
