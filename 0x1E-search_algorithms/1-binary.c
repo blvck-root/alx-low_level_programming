@@ -21,7 +21,7 @@ int binary_search(int *array, size_t size, int value)
 
 	while (i <= j)
 	{
-		print_array(array, con, j);
+		print_array(array, i, j);
 		curr = (i + j) / 2;
 		if (array[curr] == value)
 			return (curr);
